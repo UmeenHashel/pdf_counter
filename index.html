@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf/Word File Page Counter</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF/Word Page Counter</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="myfile">Select a file:</label>
+            <input type="file" name="myfile" id="myfile" accept=".pdf, .doc, .docx" required><br/><br/>
+            <button type="submit">Upload</button>
+            <button type="button" id="resetButton">Reset</button>
+        </form>
+        <div id="pageCount"></div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
