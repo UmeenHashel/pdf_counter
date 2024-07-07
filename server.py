@@ -32,6 +32,10 @@ def send_scripts(path):
 def send_styles(path):
     return send_from_directory('styles', path)
 
+@app.route('/img/<path:path>')
+def send_img(path):
+    return send_from_directory('img', path)
+
 @app.route('/upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
